@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular mayor con JavaScript</title>
+</head>
+<body>
+
+<script>
+
+    const edadDelUsuario = parseInt(prompt("¿Cuál es tu edad?"));
+        if(edadDelUsuario >= 18){
+            alert("Eres mayor de edad. Presiona aceptar e ingresa la primer edad a comparar");
+        }else{
+            alert("Eres menor de edad.Presiona aceptar e ingresa la primer edad a comparar");
+        }
+        var n1 = prompt("Ingrese la edad del primer usuario");
+        var n2 = prompt("Ingrese la edad del segundo usuario");
+        var n3 = prompt("Ingrese la edad del tercer usuario");
+            if(n1 == n2 && n1 === n3){
+        document.write("Las 3 edades ingresadas son iguales: ",n1);
+        } 
+             else if(n1 > n2 && n1 > n3) {
+        document.write("La mayor edad de las 3 ingresadas es la del primer usuario: ",n1);
+        } 
+            else if (n2 > n3) {
+        document.write("La mayor edad de las 3 ingresadas es la del segundo usuario: ",n2);
+            } else {
+        document.write("La mayor edad de las 3 ingresadas es la del tercer usuario: ",n3);
+}
+</script>
+</body>
+</html>
